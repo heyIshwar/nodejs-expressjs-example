@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>I Am A Postman</h1>
+	<hr />
+	Email address: <%= recEmail %> <br />
+	Password: <%= recPassword %>
+	<hr />
+	<% 
+		if (isAuth == true) {
+			%>
+			<h1>You are authorised !</h1>
+			<%
+		} else {
+			%>
+			<h1>Who are you?git remote add origin https://github.com/heyIshwar/nodejs-expressjs-example.git</h1>
+			<%
+		}
+	%>
+</body>
+
+</html>

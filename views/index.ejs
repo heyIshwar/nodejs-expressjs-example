@@ -1,0 +1,17 @@
+<%- include header.ejs %>
+
+<h1>
+  Welcome Members
+  <hr />
+  <%
+  
+  let myVariable = "Ishwar"
+  let present = ["Akash", "Sanket", "Jayesh", "Aniket", "Shinde", "Samruddhi", "Atharva", "Dhairya"]
+
+  let myString = myVariable + " is teaching " + present.join(", ")
+  %>
+
+  <%= myString %>
+  <hr/>
+  <a href="/form">Click to fill form</a>
+</h1>
