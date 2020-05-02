@@ -1,0 +1,65 @@
+<%- include ('new_header.ejs') %>
+<%
+let indiaIndex = 0;
+let i;
+%>
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid">
+            <h2>Coronavirus Statistics</h2>
+            <hr />
+            <div class="row" style="text-align: center;">
+                <div class="col-md-3">
+                    <span style="font-size: 72px;" id="totalDeaths">
+                        <%= Global.TotalDeaths %>
+                    </span><Br />
+                    <h4>Total Deaths</h4>
+                </div>
+                <div class="col-md-3">
+                    <span style="font-size: 72px;" id="totalCases">
+                        <%= Global.TotalConfirmed %>
+                    </span><Br />
+                    <h4>Total Cases</h4>
+                </div>
+                <div class="col-md-3">
+                    <span style="font-size: 72px;" id="newDeaths">
+                        <%= Global.NewDeaths %>
+                    </span><Br />
+                    <h4>New Deaths</h4>
+                </div>
+                <div class="col-md-3">
+                    <span style="font-size: 72px;" id="newCases">
+                        <%= Global.NewConfirmed %>
+                    </span><Br />
+                    <h4>New Cases</h4>
+                </div>
+            </div>
+            <br /><br />
+            
+        </div>
+    </main>
+    <footer class="py-4 bg-light mt-auto">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between small">
+                <div class="text-muted">Copyright &copy; Your Website 2019</div>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    &middot;
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<script src="assets/demo/chart-area-demo.js"></script>
+<script src="assets/demo/chart-bar-demo.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+<script src="assets/demo/datatables-demo.js"></script>
+</body>
+</html>
